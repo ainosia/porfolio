@@ -95,6 +95,7 @@ export class LayoutComponent implements OnInit {
     $(document).ready(function() {
       $('.menu-trigger').click(function() {
         $('nav ul').slideToggle(768);
+        $('nav ul').css({ position: 'fixed' });
       });
 
       $('nav ul li').click(function() {
